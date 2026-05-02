@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bolder Templates</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed": "#e5e2e1",
+                        "on-surface-variant": "#e2bfb0",
+                        "error-container": "#93000a",
+                        "secondary-fixed": "#e6deff",
+                        "surface": "#131313",
+                        "surface-container-low": "#1c1b1b",
+                        "inverse-surface": "#e5e2e1",
+                        "tertiary-fixed-dim": "#c9c6c5",
+                        "on-background": "#e5e2e1",
+                        "on-surface": "#e5e2e1",
+                        "on-error-container": "#ffdad6",
+                        "surface-variant": "#353534",
+                        "secondary-fixed-dim": "#cabeff",
+                        "secondary": "#cabeff",
+                        "background": "#131313",
+                        "surface-dim": "#131313",
+                        "surface-container-lowest": "#0e0e0e",
+                        "surface-container": "#201f1f",
+                        "surface-container-highest": "#353534",
+                        "primary-fixed": "#ffdbcc",
+                        "surface-tint": "#ffb693",
+                        "on-primary-fixed": "#351000",
+                        "on-primary-container": "#572000",
+                        "surface-container-high": "#2a2a2a",
+                        "on-secondary": "#32009a",
+                        "on-tertiary-fixed-variant": "#474646",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "on-secondary-container": "#b9aaff",
+                        "on-primary-fixed-variant": "#7a3000",
+                        "inverse-primary": "#a04100",
+                        "outline": "#a98a7d",
+                        "primary-container": "#ff6b00",
+                        "outline-variant": "#5a4136",
+                        "surface-bright": "#3a3939",
+                        "on-error": "#690005",
+                        "error": "#ffb4ab",
+                        "tertiary-container": "#9a9898",
+                        "on-primary": "#561f00",
+                        "secondary-container": "#4918c8",
+                        "tertiary": "#c9c6c5",
+                        "on-secondary-fixed-variant": "#4918c8",
+                        "on-secondary-fixed": "#1c0062",
+                        "primary": "#ffb693",
+                        "on-tertiary": "#313030",
+                        "primary-fixed-dim": "#ffb693",
+                        "inverse-on-surface": "#313030",
+                        "on-tertiary-container": "#313130"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin": "2rem",
+                        "lg": "1.5rem",
+                        "xl": "2.5rem",
+                        "gutter": "1.5rem",
+                        "xs": "0.25rem",
+                        "xxl": "4rem",
+                        "sm": "0.5rem",
+                        "md": "1rem"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "h2": ["Inter"],
+                        "display": ["Inter"],
+                        "h3": ["Inter"],
+                        "h1": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "h2": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "display": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700" }],
+                        "h3": ["24px", { "lineHeight": "1.3", "letterSpacing": "-0.02em", "fontWeight": "500" }],
+                        "h1": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.03em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-card {
+            background-color: rgba(13, 13, 13, 0.6);
+            backdrop-filter: blur(32px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            background-image: linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0) 100%);
+        }
+        .glow-effect {
+            box-shadow: inset 1px 1px 0px 0px rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md min-h-screen flex flex-col antialiased selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full border-b border-white/10 z-50 bg-zinc-950/60 backdrop-blur-xl">
+<div class="flex justify-between items-center px-8 h-16 w-full max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-8">
+<span class="text-xl font-bold tracking-tighter text-white uppercase">Bolder</span>
+<nav class="hidden md:flex gap-6 items-center">
+<a class="text-zinc-400 hover:text-white transition-colors hover:bg-white/5 transition-all duration-300 px-3 py-1.5 rounded-DEFAULT font-inter tracking-tight text-body-md" href="#">Features</a>
+<a class="text-orange-500 font-semibold hover:bg-white/5 transition-all duration-300 px-3 py-1.5 rounded-DEFAULT font-inter tracking-tight text-body-md" href="#">Templates</a>
+<a class="text-zinc-400 hover:text-white transition-colors hover:bg-white/5 transition-all duration-300 px-3 py-1.5 rounded-DEFAULT font-inter tracking-tight text-body-md" href="#">Community</a>
+<a class="text-zinc-400 hover:text-white transition-colors hover:bg-white/5 transition-all duration-300 px-3 py-1.5 rounded-DEFAULT font-inter tracking-tight text-body-md" href="#">Pricing</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-gradient-to-br from-primary-container to-primary-container text-on-primary font-label-sm py-2 px-4 rounded-DEFAULT shadow-2xl shadow-orange-500/5 active:scale-95 duration-200 glow-effect">
+                    Start Designing
+                </button>
+</div>
+</div>
+</header>
+<main class="flex-grow pt-[100px] px-margin max-w-screen-2xl mx-auto w-full pb-xxl">
+<!-- Search & Filter Section -->
+<section class="mb-xl">
+<h1 class="font-display text-display text-on-surface mb-lg">Template Gallery</h1>
+<div class="flex flex-col md:flex-row gap-lg items-center glass-card p-lg rounded-xl glow-effect">
+<div class="relative w-full md:w-96">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-tertiary-container pointer-events-none">search</span>
+<input class="w-full bg-[#050505] text-on-surface border border-outline-variant focus:border-primary-container rounded-lg py-2 pl-10 pr-4 shadow-[inset_0_2px_4px_rgba(0,0,0,0.5)] outline-none transition-colors font-body-md placeholder:text-tertiary-container" placeholder="Search templates..." type="text"/>
+</div>
+<div class="flex flex-wrap gap-sm">
+<button class="px-4 py-1.5 rounded-full border border-white/10 bg-surface-container-high text-on-surface font-label-sm text-label-sm hover:bg-surface-bright transition-colors">All</button>
+<button class="px-4 py-1.5 rounded-full border border-white/10 bg-surface-container text-tertiary-container font-label-sm text-label-sm hover:bg-surface-bright hover:text-on-surface transition-colors">Minimal</button>
+<button class="px-4 py-1.5 rounded-full border border-white/10 bg-surface-container text-tertiary-container font-label-sm text-label-sm hover:bg-surface-bright hover:text-on-surface transition-colors">Vibrant</button>
+<button class="px-4 py-1.5 rounded-full border border-white/10 bg-surface-container text-tertiary-container font-label-sm text-label-sm hover:bg-surface-bright hover:text-on-surface transition-colors">Dark</button>
+<button class="px-4 py-1.5 rounded-full border border-white/10 bg-surface-container text-tertiary-container font-label-sm text-label-sm hover:bg-surface-bright hover:text-on-surface transition-colors">Neon</button>
+</div>
+</div>
+</section>
+<!-- Gallery Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-xl">
+<!-- Card 1: Cyberpunk Essentials -->
+<article class="glass-card rounded-xl p-lg flex flex-col group relative overflow-hidden glow-effect transition-transform hover:-translate-y-1 duration-300">
+<div class="absolute -z-10 w-[200%] h-[200%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[radial-gradient(circle,rgba(255,107,0,0.05)_0%,transparent_60%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<div class="flex justify-between items-start mb-lg">
+<div>
+<h3 class="font-h3 text-h3 text-on-surface mb-xs">Cyberpunk Essentials</h3>
+<p class="font-body-md text-body-md text-tertiary-container">Neon accents &amp; stark contrasts.</p>
+</div>
+<span class="bg-surface-container px-2 py-1 rounded-sm border border-outline-variant text-primary-container font-label-sm text-label-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                        PRO
+                    </span>
+</div>
+<div class="grid grid-cols-2 gap-sm mb-lg flex-grow">
+<div class="aspect-square bg-surface-container-lowest rounded-lg border border-outline-variant overflow-hidden relative">
+<img alt="A striking digital installation art piece featuring glowing, generative geometric shapes suspended in a vast, minimalist gallery space. The room is illuminated by high-key, soft white lighting that creates a bright, modern light-mode aesthetic. The artwork relies on a sophisticated palette of deep blacks and pristine whites, punctuated by intense accents of vibrant red. The mood is serene yet technologically advanced." class="w-full h-full object-cover opacity-80 mix-blend-screen grayscale-[50%]" data-alt="A striking digital installation art piece featuring glowing, generative geometric shapes suspended in a vast, minimalist gallery space. The room is illuminated by high-key, soft white lighting that creates a bright, modern light-mode aesthetic. The artwork relies on a sophisticated palette of deep blacks and pristine whites, punctuated by intense accents of vibrant red. The mood is serene yet technologically advanced." src="https://lh3.googleusercontent.com/aida/ADBb0ujn49KWhLpG0e9fHHeT-f9njV3YUfOWfXyeWy66_qwkCqBij0K9XJUTbPSWObxk8bYeA3uU_6isd20oBx-oAqYxukIU9apD-wUmhhB3rRZTziGfrAkWYa7ROWKzkJdA-bV5o-9Ygan07flpFXsFrn3EZKevrUBBrqQ-jcevTgrqxMv4loesbyhgb_8N3_PANUdJYVYGRz50YlDo6EZEXU_FjxLmojcCxB-mqO0fgkzAfbpoDAD1xRwldLg"/>
+</div>
+<div class="aspect-square bg-surface-container-lowest rounded-lg border border-outline-variant overflow-hidden relative">
+<img alt="A close up shot of a sleek, dark metallic surface with intricate, glowing orange circuitry patterns etched into it. The scene represents a high-performance computing environment with a dark mode aesthetic. The lighting is low and moody, emphasizing the glowing orange lines against the deep blacks and subtle greys. The mood is highly technical and powerful." class="w-full h-full object-cover opacity-80 mix-blend-screen grayscale-[50%]" data-alt="A close up shot of a sleek, dark metallic surface with intricate, glowing orange circuitry patterns etched into it. The scene represents a high-performance computing environment with a dark mode aesthetic. The lighting is low and moody, emphasizing the glowing orange lines against the deep blacks and subtle greys. The mood is highly technical and powerful." src="https://lh3.googleusercontent.com/aida/ADBb0uj0s8_A_kHAU0d0gdiX6oZ8Q9YSyAKuvKI7EGAdxnG8jOSPSL0n-B2MWhbA41z5sNx4GmNYqGHfZhD4x4V_WjLu7HeFA5XCoEq-7CY9l9Di2A4V6jHdMb8MOqyNMH3ZVK2yFnhjF2KZJK9d4tjqK26dRinmNm6ntvwgk69jGPLIeBSgdNRw59kC7dHPjdIakpdLXjjWStbwvCxplpYVCfMPZjPJLfqVdQu903UJpyYauGtccj1Tz2zEFcE"/>
+</div>
+</div>
+<button class="w-full py-2 bg-transparent border border-white/10 rounded-DEFAULT text-on-surface font-label-sm text-label-sm hover:bg-white/5 transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+                    Preview Collection
+                </button>
+</article>
+<!-- Card 2: Minimalist Mono -->
+<article class="glass-card rounded-xl p-lg flex flex-col group relative overflow-hidden glow-effect transition-transform hover:-translate-y-1 duration-300">
+<div class="absolute -z-10 w-[200%] h-[200%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[radial-gradient(circle,rgba(255,255,255,0.03)_0%,transparent_60%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<div class="flex justify-between items-start mb-lg">
+<div>
+<h3 class="font-h3 text-h3 text-on-surface mb-xs">Minimalist Mono</h3>
+<p class="font-body-md text-body-md text-tertiary-container">Clean lines, pure focus.</p>
+</div>
+<span class="bg-surface-container px-2 py-1 rounded-sm border border-outline-variant text-tertiary-container font-label-sm text-label-sm">
+                        FREE
+                    </span>
+</div>
+<div class="grid grid-cols-2 gap-sm mb-lg flex-grow">
+<div class="aspect-square bg-surface-container-lowest rounded-lg border border-outline-variant overflow-hidden relative flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-tertiary-fixed-dim" style="font-variation-settings: 'wght' 200;">folder_open</span>
+</div>
+<div class="aspect-square bg-surface-container-lowest rounded-lg border border-outline-variant overflow-hidden relative">
+<img alt="A minimalist architectural space featuring smooth concrete surfaces and sharp, angular shadows. The environment is rendered in stark black and white with a subtle, atmospheric noise grain. The lighting is dramatic and directional, creating a sense of depth and precision. The overall aesthetic is highly technical, clean, and silent, representing a sophisticated dark-mode UI style." class="w-full h-full object-cover opacity-60 grayscale" data-alt="A minimalist architectural space featuring smoothংকার smooth concrete surfaces and sharp, angular shadows. The environment is rendered in stark black and white with a subtle, atmospheric noise grain. The lighting is dramatic and directional, creating a sense of depth and precision. The overall aesthetic is highly technical, clean, and silent, representing a sophisticated dark-mode UI style." src="https://lh3.googleusercontent.com/aida/ADBb0uiabOFzYw78NFemj6HE627zt-3rJFP4NdD5sO-ZhX-7S5chKry3Ivni0dwT0oyTtx_aSp17JwaNWtFoFsmF--YsN_YGKQdgdWHpnxnHP7JEJJAo3_TMiEG9ewiSvocpWkW8inEfopSzxTB0nyxad4ul10JnlMX-KGjYP3WIYDRvUe2LTZeoJXhmS-NSq-p_yczs-wrIb93acfoizJGV654EmuDCCZ3QlqP-uCsxjY-oOqXxc-kBMtk5aKfBl0lds5HqAxdUJoA"/>
+</div>
+</div>
+<button class="w-full py-2 bg-transparent border border-white/10 rounded-DEFAULT text-on-surface font-label-sm text-label-sm hover:bg-white/5 transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+                    Preview Collection
+                </button>
+</article>
+<!-- Card 3: Pastel Dreams -->
+<article class="glass-card rounded-xl p-lg flex flex-col group relative overflow-hidden glow-effect transition-transform hover:-translate-y-1 duration-300">
+<div class="absolute -z-10 w-[200%] h-[200%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[radial-gradient(circle,rgba(202,190,255,0.05)_0%,transparent_60%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<div class="flex justify-between items-start mb-lg">
+<div>
+<h3 class="font-h3 text-h3 text-on-surface mb-xs">Pastel Dreams</h3>
+<p class="font-body-md text-body-md text-tertiary-container">Soft gradients &amp; ethereal vibes.</p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-sm mb-lg flex-grow">
+<div class="aspect-square bg-surface-container-lowest rounded-lg border border-outline-variant overflow-hidden relative">
+<img alt="A collection of soft, blurred, pastel-colored orbs floating in a dark, infinite space. The colors are muted pinks, purples, and soft yellows, contrasting against the deep black background. The light source is gentle and diffused, creating a dreamy, ethereal atmosphere. The visual style represents a delicate glassmorphic UI approach within a dark mode theme." class="w-full h-full object-cover opacity-70 mix-blend-screen" data-alt="A collection of soft, blurred, pastel-colored orbs floating in a dark, infinite space. The colors are muted pinks, purples, and soft yellows, contrasting against the deep black background. The light source is gentle and diffused, creating a dreamy, ethereal atmosphere. The visual style represents a delicate glassmorphic UI approach within a dark mode theme." src="https://lh3.googleusercontent.com/aida/ADBb0uhZAx0hI3yth-kpQL6vtocgA9ZUHxOKITdv4SOvKlKpEfYTGpk1QseR0Z9BcAg5NBIdMwCKSY0vDvkRlE2D58b645TL6TVJEX_RWN0EAXPZ4wXxcbczKrPTZ5IQGw0IEZf4H3cM9S3ct9JL3phe9Rr3O3FoRCSZSFFpKh4_ZIptoOjeS4iERPxPlenLLmYMqsZyNv2THjE350IohSE8GzdcBOikEJN93p_C7dWNXV8Dw3ZQH6RHojzucDk"/>
+</div>
+<div class="aspect-square bg-surface-container-lowest rounded-lg border border-outline-variant overflow-hidden relative">
+<img alt="A serene landscape rendered as low-poly digital art, featuring subtle pastel hues of violet and soft green against a dark, starry sky. The geometric shapes create sharp edges that contrast with the gentle colors. The lighting simulates a soft moonlight, providing a calm, focused mood suitable for a premium technical UI design." class="w-full h-full object-cover opacity-70 mix-blend-screen" data-alt="A serene landscape rendered as low-poly digital art, featuring subtle pastel hues of violet and soft green against a dark, starry sky. The geometric shapes create sharp edges that contrast with the gentle colors. The lighting simulates a soft moonlight, providing a calm, focused mood suitable for a premium technical UI design." src="https://lh3.googleusercontent.com/aida/ADBb0ugC2s2OepvcPjCawfoMIwPMRkuZrnLEfmkQPyyM1toZA7Flk6zPKZhPSieofzJuAiDOG4BD5bkIcmOX4SCD3ACJEBZYM_tJ411HNCB5kKbowvUfGeQVn5W53lCz4S4I4X348uG4Nl0S-opvHNnABrRmr8fahk_ehMjLJnaWiskMDLdnB8FyCj4ShNnERbg3TU5ht1RuDESDooD1NN-7V0Mb0h1N4tW1GtCaq1OmZrCmsgNYjrOwPTXj-H8"/>
+</div>
+</div>
+<button class="w-full py-2 bg-transparent border border-white/10 rounded-DEFAULT text-on-surface font-label-sm text-label-sm hover:bg-white/5 transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+                    Preview Collection
+                </button>
+</article>
+<!-- Card 4: Studio Pro -->
+<article class="glass-card rounded-xl p-lg flex flex-col group relative overflow-hidden glow-effect transition-transform hover:-translate-y-1 duration-300">
+<div class="absolute -z-10 w-[200%] h-[200%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[radial-gradient(circle,rgba(255,255,255,0.05)_0%,transparent_60%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<div class="flex justify-between items-start mb-lg">
+<div>
+<h3 class="font-h3 text-h3 text-on-surface mb-xs">Studio Pro</h3>
+<p class="font-body-md text-body-md text-tertiary-container">High-fidelity tools for creators.</p>
+</div>
+<span class="bg-surface-container px-2 py-1 rounded-sm border border-outline-variant text-primary-container font-label-sm text-label-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                        PRO
+                    </span>
+</div>
+<div class="grid grid-cols-2 gap-sm mb-lg flex-grow">
+<div class="aspect-square bg-surface-container-lowest rounded-lg border border-outline-variant overflow-hidden relative">
+<img alt="A highly detailed, macro shot of a camera lens element reflecting a stark, geometric studio lighting setup. The metallic textures of the lens barrel are deep blacks and gunmetal greys, with sharp highlights. The overall mood is professional, precise, and engineered, fitting perfectly into a cinematic dark mode design system." class="w-full h-full object-cover opacity-80 grayscale-[30%]" data-alt="A highly detailed, macro shot of a camera lens element reflecting a stark, geometric studio lighting setup. The metallic textures of the lens barrel are deep blacks and gunmetal greys, with sharp highlights. The overall mood is professional, precise, and engineered, fitting perfectly into a cinematic dark mode design system." src="https://lh3.googleusercontent.com/aida/ADBb0ujKs1QO-VYYpWXjG4pMFP_4COxaze1WlGhc3uP5IwuEscpZ_Hs5bt2ttWG3EkcSJiUtmr7n7t2pe3K-H1gGkIXNY-3jP0zfh-2l-g6w_WPl_t3rASg7yjoboCk2Ob1XVme5gqIZj9FQB7wjZLnx9eoaam0A9bpFvf87wVXIcwBqeHKBJQY-KT5kUkr5k-1b5-oZ6degagjhZYnfX-o-4ETcy-Lu3TzIsaX9XHy1lYwiqjhqmsYgq56qKOs"/>
+</div>
+<div class="aspect-square bg-surface-container-lowest rounded-lg border border-outline-variant overflow-hidden relative flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-on-surface" style="font-variation-settings: 'wght' 300;">movie_creation</span>
+</div>
+</div>
+<button class="w-full py-2 bg-transparent border border-white/10 rounded-DEFAULT text-on-surface font-label-sm text-label-sm hover:bg-white/5 transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+                    Preview Collection
+                </button>
+</article>
+</section>
+<!-- Hidden Images for fulfillment -->
+<div class="hidden">
+<img alt="Hidden placeholder 1" data-alt="Abstract geometric shapes in dark mode." src="https://lh3.googleusercontent.com/aida/ADBb0ug1p94bXoF7eJK_4mS0NijW91o-_piVqwtWRL4vn3fMT-h9-oqc689Hz2Z7EEDE-fx1WEdIEg3r8WXwKYos-xuOwczdAKLZtOwfbuDuwBEwqDb4Lo3zDSdKqg9Pu8_eZm-3nHXBL4p05nShh2F0rn8opNE2QhRV8Ougky0u1jnIWt2mzResWhlUTS2zlVd_FNH421H4_qc-zdTYjHsCRJQjEsUAaShADefxF4U_XWHWISN74hD73vquhA"/>
+<img alt="Hidden placeholder 2" data-alt="Abstract geometric shapes in dark mode." src="https://lh3.googleusercontent.com/aida/ADBb0uj6GEfxMqtsOco4uGy0-YgeMKUutZD4teXcEsaGMpMJxpjcKgSD2MZ9_pBIggZp0zo9_DpnW1NR183Obzmh449t1GDQaM36nZsSZe32fETgGZIcptzUG_Kia2cTpLpBecXriZIDvdqPJ4Q6dfYeXJ6l5sd6ZOvTHvY3vZ9T60xCaiXX3pTVqgbPCteFbIDcm8DRm3Lk5Gj0mMrw0usrBj-2_8uMYsOf7O_vvW2ZXJx0-ReD4hWLL7P8ssM"/>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 border-t border-zinc-900 bg-zinc-950 mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 w-full max-w-screen-2xl mx-auto">
+<span class="text-lg font-black text-white">Bolder</span>
+<span class="text-sm font-inter text-zinc-500">© 2024 Bolder. Quiet Power in Customization.</span>
+<div class="flex gap-4">
+<a class="text-zinc-500 hover:text-orange-400 transition-colors text-sm font-inter" href="#">Discord</a>
+<a class="text-zinc-500 hover:text-orange-400 transition-colors text-sm font-inter" href="#">Instagram</a>
+<a class="text-zinc-500 hover:text-orange-400 transition-colors text-sm font-inter" href="#">X</a>
+</div>
+</div>
+</footer>
+</body></html>

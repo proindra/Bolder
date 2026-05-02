@@ -1,0 +1,30 @@
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bodyGradient" x1="250" y1="100" x2="250" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#9575CD"/>
+      <stop offset="100%" stop-color="#673AB7"/>
+    </linearGradient>
+    <linearGradient id="paperGradient" x1="50" y1="114" x2="450" y2="114" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#EDE7F6"/>
+    </linearGradient>
+  </defs>
+
+  <g id="anime-folder-cyber">
+    <!-- 1. Folder Body -->
+    <rect x="50" y="100" width="400" height="300" rx="18" fill="url(#bodyGradient)" />
+
+    <!-- 2. Paper Strip -->
+    <rect x="50" y="100" width="400" height="28" rx="6" fill="url(#paperGradient)" />
+
+    <!-- 3. Tab -->
+    <path d="M50 100 H190 L175 57 C172 49 165 45 158 45 H68 C60 45 53 49 50 57 V100Z" fill="#4527A0" />
+
+    <!-- Cyberpunk/Tech lines -->
+    <path d="M70 150 H150" stroke="#B39DDB" stroke-width="2" opacity="0.6"/>
+    <path d="M70 160 H120" stroke="#B39DDB" stroke-width="2" opacity="0.4"/>
+    
+    <!-- Neon Moon Sticker -->
+    <path d="M380 340 C380 356.5 366.5 370 350 370 C333.5 370 320 356.5 320 340 C320 323.5 333.5 310 350 310 C360 310 368 315 373 322 C368 322 360 328 360 340 C360 352 368 358 373 358 C368 365 360 370 350 370" fill="#FFEB3B" opacity="0.8" />
+  </g>
+</svg>

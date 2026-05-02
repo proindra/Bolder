@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BOLDER | Editor</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "surface-dim": "#131313",
+                "on-surface": "#e5e2e1",
+                "on-tertiary-fixed": "#1c1b1b",
+                "surface-container-high": "#2a2a2a",
+                "secondary-container": "#4918c8",
+                "primary-fixed": "#ffdbcc",
+                "surface-container-highest": "#353534",
+                "on-tertiary-container": "#313130",
+                "error-container": "#93000a",
+                "surface-container": "#201f1f",
+                "primary": "#ffb693",
+                "on-primary-container": "#572000",
+                "error": "#ffb4ab",
+                "on-primary-fixed": "#351000",
+                "tertiary-container": "#9a9898",
+                "surface-variant": "#353534",
+                "tertiary-fixed-dim": "#c9c6c5",
+                "on-secondary": "#32009a",
+                "on-secondary-container": "#b9aaff",
+                "on-primary-fixed-variant": "#7a3000",
+                "on-error-container": "#ffdad6",
+                "primary-fixed-dim": "#ffb693",
+                "surface-container-lowest": "#0e0e0e",
+                "secondary-fixed-dim": "#cabeff",
+                "inverse-surface": "#e5e2e1",
+                "on-surface-variant": "#e2bfb0",
+                "on-tertiary": "#313030",
+                "secondary": "#cabeff",
+                "surface-tint": "#ffb693",
+                "inverse-on-surface": "#313030",
+                "on-tertiary-fixed-variant": "#474646",
+                "tertiary-fixed": "#e5e2e1",
+                "tertiary": "#c9c6c5",
+                "secondary-fixed": "#e6deff",
+                "primary-container": "#ff6b00",
+                "surface-container-low": "#1c1b1b",
+                "on-secondary-fixed-variant": "#4918c8",
+                "outline-variant": "#5a4136",
+                "outline": "#a98a7d",
+                "inverse-primary": "#a04100",
+                "background": "#131313",
+                "on-secondary-fixed": "#1c0062",
+                "on-primary": "#561f00",
+                "on-error": "#690005",
+                "on-background": "#e5e2e1",
+                "surface": "#131313",
+                "surface-bright": "#3a3939"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "margin": "2rem",
+                "gutter": "1.5rem",
+                "lg": "1.5rem",
+                "sm": "0.5rem",
+                "md": "1rem",
+                "xl": "2.5rem",
+                "xxl": "4rem",
+                "xs": "0.25rem"
+        },
+        "fontFamily": {
+                "h3": [
+                        "Inter"
+                ],
+                "label-sm": [
+                        "Inter"
+                ],
+                "h1": [
+                        "Inter"
+                ],
+                "body-lg": [
+                        "Inter"
+                ],
+                "display": [
+                        "Inter"
+                ],
+                "body-md": [
+                        "Inter"
+                ],
+                "h2": [
+                        "Inter"
+                ],
+                "sans": ["Inter", "sans-serif"]
+        },
+        "fontSize": {
+                "h3": [
+                        "24px",
+                        {
+                                "lineHeight": "1.3",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "500"
+                        }
+                ],
+                "label-sm": [
+                        "12px",
+                        {
+                                "lineHeight": "1",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "h1": [
+                        "48px",
+                        {
+                                "lineHeight": "1.2",
+                                "letterSpacing": "-0.03em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "1.6",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "400"
+                        }
+                ],
+                "display": [
+                        "64px",
+                        {
+                                "lineHeight": "1.1",
+                                "letterSpacing": "-0.04em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "1.6",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "400"
+                        }
+                ],
+                "h2": [
+                        "32px",
+                        {
+                                "lineHeight": "1.2",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "600"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.02);
+        }
+        .glow-active {
+            box-shadow: 0 0 30px rgba(255, 107, 0, 0.3);
+            border-color: rgba(255, 107, 0, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-sans overflow-x-hidden selection:bg-primary-container selection:text-white">
+<!-- TopNavBar -->
+<nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl rounded-full border border-white/10 shadow-xl flex justify-between items-center px-8 py-4 z-50 bg-[#131313]/60 backdrop-blur-xl transition-all duration-300">
+<div class="text-xl font-bold text-white tracking-tight flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+            BOLDER
+        </div>
+<div class="hidden md:flex gap-8 text-sm font-medium">
+<a class="text-white/60 hover:text-white transition-colors text-white border-b border-primary-container pb-1" href="#">Features</a>
+<a class="text-white/60 hover:text-white transition-colors" href="#">Templates</a>
+<a class="text-white/60 hover:text-white transition-colors" href="#">Community</a>
+<a class="text-white/60 hover:text-white transition-colors" href="#">Pricing</a>
+</div>
+<button class="bg-white/10 text-white border border-white/20 px-5 py-2 rounded-full text-sm font-medium hover:bg-white/20 transition-all duration-300">
+            Start Designing
+        </button>
+</nav>
+<!-- Main Editor Interface -->
+<main class="flex-grow pt-32 pb-16 px-4 md:px-8 max-w-[1600px] mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-6 relative">
+<!-- Background Blur Orbs -->
+<div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+<div class="absolute top-[10%] left-[5%] w-[40vw] h-[40vw] bg-primary-container rounded-full mix-blend-screen filter blur-[200px] opacity-10"></div>
+<div class="absolute bottom-[10%] right-[5%] w-[50vw] h-[50vw] bg-[#4918c8] rounded-full mix-blend-screen filter blur-[250px] opacity-10"></div>
+</div>
+<!-- Left Panel: Presets (3 cols) -->
+<div class="lg:col-span-3 flex flex-col gap-6 h-[calc(100vh-12rem)] overflow-y-auto pr-2 custom-scrollbar relative z-10">
+<h2 class="font-h2 text-h2 text-white mb-2 tracking-tight">Presets</h2>
+<div class="glass-panel rounded-2xl p-6 cursor-pointer hover:scale-[1.02] transition-transform duration-300 glow-active">
+<div class="flex justify-between items-start mb-4">
+<span class="font-label-sm text-label-sm bg-primary-container text-white px-2 py-1 rounded">PRO</span>
+<span class="material-symbols-outlined text-white/50">favorite</span>
+</div>
+<img alt="Abstract pink digital art piece representing a bold folder preset." class="w-full h-32 object-cover rounded-lg mb-4" data-alt="A striking digital installation art piece featuring glowing, generative geometric shapes suspended in a vast, minimalist gallery space. The room is illuminated by high-key, soft white lighting that creates a bright, modern light-mode aesthetic. The artwork relies on a sophisticated palette of deep blacks and pristine whites, punctuated by intense accents of vibrant pink. The mood is serene yet technologically advanced." src="https://lh3.googleusercontent.com/aida/ADBb0uhZAx0hI3yth-kpQL6vtocgA9ZUHxOKITdv4SOvKlKpEfYTGpk1QseR0Z9BcAg5NBIdMwCKSY0vDvkRlE2D58b645TL6TVJEX_RWN0EAXPZ4wXxcbczKrPTZ5IQGw0IEZf4H3cM9S3ct9JL3phe9Rr3O3FoRCSZSFFpKh4_ZIptoOjeS4iERPxPlenLLmYMqsZyNv2THjE350IohSE8GzdcBOikEJN93p_C7dWNXV8Dw3ZQH6RHojzucDk"/>
+<h3 class="font-medium text-lg text-white mb-1">Neon Pulse</h3>
+<p class="text-xs text-white/50 font-label-sm uppercase tracking-widest">12 VARIATIONS</p>
+</div>
+<div class="glass-panel rounded-2xl p-6 cursor-pointer hover:bg-white/[0.04] transition-colors duration-300">
+<img alt="Yellow abstract digital art piece representing a bold folder preset." class="w-full h-32 object-cover rounded-lg mb-4" data-alt="A striking digital installation art piece featuring glowing, generative geometric shapes suspended in a vast, minimalist gallery space. The room is illuminated by high-key, soft white lighting that creates a bright, modern light-mode aesthetic. The artwork relies on a sophisticated palette of deep blacks and pristine whites, punctuated by intense accents of vibrant yellow. The mood is serene yet technologically advanced." src="https://lh3.googleusercontent.com/aida/ADBb0ug1p94bXoF7eJK_4mS0NijW91o-_piVqwtWRL4vn3fMT-h9-oqc689Hz2Z7EEDE-fx1WEdIEg3r8WXwKYos-xuOwczdAKLZtOwfbuDuwBEwqDb4Lo3zDSdKqg9Pu8_eZm-3nHXBL4p05nShh2F0rn8opNE2QhRV8Ougky0u1jnIWt2mzResWhlUTS2zlVd_FNH421H4_qc-zdTYjHsCRJQjEsUAaShADefxF4U_XWHWISN74hD73vquhA"/>
+<h3 class="font-medium text-lg text-white mb-1">Solar Flare</h3>
+<p class="text-xs text-white/50 font-label-sm uppercase tracking-widest">8 VARIATIONS</p>
+</div>
+<div class="glass-panel rounded-2xl p-6 cursor-pointer hover:bg-white/[0.04] transition-colors duration-300">
+<img alt="Red abstract digital art piece representing a bold folder preset." class="w-full h-32 object-cover rounded-lg mb-4" data-alt="A striking digital installation art piece featuring glowing, generative geometric shapes suspended in a vast, minimalist gallery space. The room is illuminated by high-key, soft white lighting that creates a bright, modern light-mode aesthetic. The artwork relies on a sophisticated palette of deep blacks and pristine whites, punctuated by intense accents of vibrant red. The mood is serene yet technologically advanced." src="https://lh3.googleusercontent.com/aida/ADBb0uj0s8_A_kHAU0d0gdiX6oZ8Q9YSyAKuvKI7EGAdxnG8jOSPSL0n-B2MWhbA41z5sNx4GmNYqGHfZhD4x4V_WjLu7HeFA5XCoEq-7CY9l9Di2A4V6jHdMb8MOqyNMH3ZVK2yFnhjF2KZJK9d4tjqK26dRinmNm6ntvwgk69jGPLIeBSgdNRw59kC7dHPjdIakpdLXjjWStbwvCxplpYVCfMPZjPJLfqVdQu903UJpyYauGtccj1Tz2zEFcE"/>
+<h3 class="font-medium text-lg text-white mb-1">Crimson Void</h3>
+<p class="text-xs text-white/50 font-label-sm uppercase tracking-widest">5 VARIATIONS</p>
+</div>
+</div>
+<!-- Center Panel: Canvas (6 cols) -->
+<div class="lg:col-span-6 glass-panel rounded-2xl flex flex-col h-[calc(100vh-12rem)] relative overflow-hidden group z-10">
+<!-- Toolbar -->
+<div class="flex justify-between items-center p-4 border-b border-white/5 bg-white/[0.02]">
+<div class="flex gap-2">
+<button class="p-2 rounded hover:bg-white/10 transition-colors"><span class="material-symbols-outlined text-white/80">undo</span></button>
+<button class="p-2 rounded hover:bg-white/10 transition-colors"><span class="material-symbols-outlined text-white/80">redo</span></button>
+</div>
+<div class="font-label-sm text-label-sm text-white/50 flex gap-4 tracking-widest">
+<span>100%</span>
+<span>1080x1080</span>
+</div>
+<div class="flex gap-2">
+<button class="p-2 rounded hover:bg-white/10 transition-colors"><span class="material-symbols-outlined text-white/80">layers</span></button>
+<button class="p-2 rounded hover:bg-white/10 transition-colors"><span class="material-symbols-outlined text-white/80">code</span></button>
+</div>
+</div>
+<!-- Canvas Area -->
+<div class="flex-grow flex items-center justify-center p-8 relative bg-black/20">
+<!-- Grid Background -->
+<div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.1) 1px, transparent 0); background-size: 24px 24px;"></div>
+<!-- Main Artwork -->
+<div class="relative w-full max-w-md aspect-square rounded-2xl overflow-hidden shadow-2xl border border-white/10 group-hover:scale-[1.02] transition-transform duration-700 ease-out">
+<img alt="Main canvas digital art piece." class="w-full h-full object-cover" data-alt="A striking digital installation art piece featuring glowing, generative geometric shapes suspended in a vast, minimalist gallery space. The room is illuminated by high-key, soft white lighting that creates a bright, modern light-mode aesthetic. The artwork relies on a sophisticated palette of deep blacks and pristine whites, punctuated by intense accents of vibrant purple. The mood is serene yet technologically advanced." src="https://lh3.googleusercontent.com/aida/ADBb0ugC2s2OepvcPjCawfoMIwPMRkuZrnLEfmkQPyyM1toZA7Flk6zPKZhPSieofzJuAiDOG4BD5bkIcmOX4SCD3ACJEBZYM_tJ411HNCB5kKbowvUfGeQVn5W53lCz4S4I4X348uG4Nl0S-opvHNnABrRmr8fahk_ehMjLJnaWiskMDLdnB8FyCj4ShNnERbg3TU5ht1RuDESDooD1NN-7V0Mb0h1N4tW1GtCaq1OmZrCmsgNYjrOwPTXj-H8"/>
+<!-- Floating Sticker -->
+<div class="absolute -top-4 -right-4 bg-primary-container text-white font-label-sm text-label-sm px-4 py-1.5 rounded-full rotate-[12deg] shadow-lg border border-white/20 z-10 tracking-widest">
+                        *NEW*
+                    </div>
+</div>
+</div>
+<!-- Footer Toolbar -->
+<div class="p-6 border-t border-white/5 bg-white/[0.02] flex justify-center gap-4">
+<button class="bg-white/5 hover:bg-white/10 border border-white/10 text-white px-8 py-3 rounded-full font-medium text-sm flex items-center gap-2 transition-colors tracking-wide">
+<span class="material-symbols-outlined text-lg">play_arrow</span> PREVIEW
+                </button>
+<button class="bg-primary-container text-white px-8 py-3 rounded-full font-medium text-sm hover:-translate-y-0.5 hover:shadow-[0_0_30px_rgba(255,107,0,0.4)] transition-all duration-300 tracking-wide">
+                    EXPORT
+                </button>
+</div>
+</div>
+<!-- Right Panel: Controls (3 cols) -->
+<div class="lg:col-span-3 flex flex-col gap-6 h-[calc(100vh-12rem)] overflow-y-auto pl-2 custom-scrollbar relative z-10">
+<h2 class="font-h2 text-h2 text-white mb-2 tracking-tight">Tweak</h2>
+<!-- Layer Panel -->
+<div class="glass-panel rounded-2xl p-6">
+<h3 class="font-label-sm text-label-sm text-white/50 mb-6 uppercase tracking-widest">Base Structure</h3>
+<div class="space-y-4">
+<div class="flex items-center gap-4 bg-white/5 p-3 rounded-xl border border-white/5">
+<img alt="Green structural element." class="w-12 h-12 rounded-lg object-cover" data-alt="A macro shot of a complex structural element from a digital installation. The artwork relies on a sophisticated palette of deep blacks and pristine whites, punctuated by intense accents of vibrant green. The mood is serene yet technologically advanced." src="https://lh3.googleusercontent.com/aida/ADBb0uj6GEfxMqtsOco4uGy0-YgeMKUutZD4teXcEsaGMpMJxpjcKgSD2MZ9_pBIggZp0zo9_DpnW1NR183Obzmh449t1GDQaM36nZsSZe32fETgGZIcptzUG_Kia2cTpLpBecXriZIDvdqPJ4Q6dfYeXJ6l5sd6ZOvTHvY3vZ9T60xCaiXX3pTVqgbPCteFbIDcm8DRm3Lk5Gj0mMrw0usrBj-2_8uMYsOf7O_vvW2ZXJx0-ReD4hWLL7P8ssM"/>
+<div class="flex-grow">
+<p class="text-sm font-medium text-white">Geometry 01</p>
+<p class="text-xs text-white/50 mt-0.5">Visible</p>
+</div>
+<span class="material-symbols-outlined text-white/50 hover:text-white cursor-pointer transition-colors">visibility</span>
+</div>
+<div class="flex items-center gap-4 bg-white/5 p-3 rounded-xl border border-white/5">
+<img alt="Blue structural element." class="w-12 h-12 rounded-lg object-cover opacity-50" data-alt="A macro shot of a complex structural element from a digital installation. The artwork relies on a sophisticated palette of deep blacks and pristine whites, punctuated by intense accents of vibrant blue. The mood is serene yet technologically advanced." src="https://lh3.googleusercontent.com/aida/ADBb0ujn49KWhLpG0e9fHHeT-f9njV3YUfOWfXyeWy66_qwkCqBij0K9XJUTbPSWObxk8bYeA3uU_6isd20oBx-oAqYxukIU9apD-wUmhhB3rRZTziGfrAkWYa7ROWKzkJdA-bV5o-9Ygan07flpFXsFrn3EZKevrUBBrqQ-jcevTgrqxMv4loesbyhgb_8N3_PANUdJYVYGRz50YlDo6EZEXU_FjxLmojcCxB-mqO0fgkzAfbpoDAD1xRwldLg"/>
+<div class="flex-grow">
+<p class="text-sm font-medium text-white/50">Texture 02</p>
+<p class="text-xs text-white/40 mt-0.5">Hidden</p>
+</div>
+<span class="material-symbols-outlined text-white/40 hover:text-white cursor-pointer transition-colors">visibility_off</span>
+</div>
+</div>
+</div>
+<!-- Controls Panel -->
+<div class="glass-panel rounded-2xl p-6 flex-grow">
+<h3 class="font-label-sm text-label-sm text-white/50 mb-8 uppercase tracking-widest">Properties</h3>
+<div class="space-y-8">
+<!-- Slider 1 -->
+<div>
+<div class="flex justify-between text-xs mb-3 font-label-sm text-white/70 tracking-widest">
+<span>INTENSITY</span>
+<span class="text-primary-container">85%</span>
+</div>
+<div class="h-1.5 bg-white/10 rounded-full overflow-hidden">
+<div class="h-full bg-primary-container w-[85%] relative shadow-[0_0_15px_rgba(255,107,0,0.6)]"></div>
+</div>
+</div>
+<!-- Slider 2 -->
+<div>
+<div class="flex justify-between text-xs mb-3 font-label-sm text-white/70 tracking-widest">
+<span>DISTORTION</span>
+<span class="text-white/50">42%</span>
+</div>
+<div class="h-1.5 bg-white/10 rounded-full overflow-hidden">
+<div class="h-full bg-white/30 w-[42%] relative"></div>
+</div>
+</div>
+<!-- Color Picker -->
+<div>
+<span class="font-label-sm text-label-sm text-white/50 block mb-4 uppercase tracking-widest">Primary Glow</span>
+<div class="flex gap-4">
+<div class="w-8 h-8 rounded-full bg-primary-container ring-2 ring-white/20 cursor-pointer shadow-[0_0_15px_rgba(255,107,0,0.4)] hover:ring-white transition-all"></div>
+<div class="w-8 h-8 rounded-full bg-[#4918c8] cursor-pointer hover:ring-2 ring-white/50 transition-all border border-white/10"></div>
+<div class="w-8 h-8 rounded-full bg-[#ccff00] cursor-pointer hover:ring-2 ring-white/50 transition-all border border-white/10"></div>
+<div class="w-8 h-8 rounded-full bg-white cursor-pointer hover:ring-2 ring-white/50 transition-all border border-white/10"></div>
+<div class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center cursor-pointer border border-white/20 hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-sm text-white/70">add</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Mini Preview Map (Decorative) -->
+<div class="glass-panel rounded-2xl p-6 relative overflow-hidden">
+<h3 class="font-label-sm text-label-sm text-white/50 mb-4 uppercase tracking-widest">Render Node</h3>
+<div class="relative h-24 rounded-xl overflow-hidden border border-white/10">
+<img alt="Map of Tokyo rendering node." class="w-full h-full object-cover opacity-60 mix-blend-luminosity" data-alt="A striking digital installation art piece featuring glowing, generative geometric shapes suspended in a vast, minimalist gallery space. The room is illuminated by high-key, soft white lighting that creates a bright, modern light-mode aesthetic. The artwork relies on a sophisticated palette of deep blacks and pristine whites, punctuated by intense accents of vibrant green. The mood is serene yet technologically advanced." data-location="Tokyo" src="https://lh3.googleusercontent.com/aida/ADBb0ujKs1QO-VYYpWXjG4pMFP_4COxaze1WlGhc3uP5IwuEscpZ_Hs5bt2ttWG3EkcSJiUtmr7n7t2pe3K-H1gGkIXNY-3jP0zfh-2l-g6w_WPl_t3rASg7yjoboCk2Ob1XVme5gqIZj9FQB7wjZLnx9eoaam0A9bpFvf87wVXIcwBqeHKBJQY-KT5kUkr5k-1b5-oZ6degagjhZYnfX-o-4ETcy-Lu3TzIsaX9XHy1lYwiqjhqmsYgq56qKOs"/>
+<div class="absolute inset-0 bg-primary-container/10 mix-blend-color"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-primary-container rounded-full shadow-[0_0_15px_rgba(255,107,0,1)] animate-pulse"></div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-white/10 pt-20 pb-10 bg-[#0a0a0a] relative z-50">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-12 text-sm text-white/50">
+<div>
+<div class="text-lg font-bold text-white mb-6 flex items-center gap-2 tracking-tight">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+            BOLDER
+        </div>
+<p class="font-light">© 2024 BOLDER. STAY WILD.</p>
+</div>
+<div class="col-span-1 md:col-span-3 flex flex-wrap gap-8 font-medium text-xs uppercase tracking-widest">
+<a class="hover:text-white transition-colors cursor-pointer" href="#">Privacy</a>
+<a class="hover:text-white transition-colors cursor-pointer" href="#">Terms</a>
+<a class="hover:text-white transition-colors cursor-pointer" href="#">Discord</a>
+<a class="hover:text-white transition-colors cursor-pointer" href="#">Instagram</a>
+<a class="hover:text-white transition-colors cursor-pointer" href="#">TikTok</a>
+</div>
+</div>
+</footer>
+</body></html>
