@@ -21,7 +21,7 @@ export default function ApplyGuide() {
 <span className="text-xs font-semibold text-white/50 uppercase tracking-[0.15em]">Step 01</span>
 </div>
 <div className="w-full h-48 rounded-xl mb-6 overflow-hidden relative border border-white/10">
-<img alt="Step 1" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" data-alt="A stylized, glassmorphic rendering of a generic folder icon on a dark, mesh-gradient background. The folder is rendered with thick, semi-transparent neon pink and purple borders, glowing faintly against the deep obsidian backdrop. The lighting is moody and cyber-punk inspired, highlighting the smooth, digital texture of the folder surface. The composition is central and bold, exuding a playful, modern Gen Z tech aesthetic." src="/assets/icons/skeuomorphic_folder.png"/>
+<img alt="Step 1" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" data-alt="A stylized, glassmorphic rendering of a generic folder icon on a dark, mesh-gradient background. The folder is rendered with thick, semi-transparent neon pink and purple borders, glowing faintly against the deep obsidian backdrop. The lighting is moody and cyber-punk inspired, highlighting the smooth, digital texture of the folder surface. The composition is central and bold, exuding a playful, modern Gen Z tech aesthetic." src="./assets/icons/skeuomorphic_folder.png"/>
 </div>
 <h3 className="text-2xl font-medium text-white mb-4 tracking-tight">Find Your Icon</h3>
 <p className="text-white/50 font-light leading-relaxed flex-grow">
@@ -45,7 +45,7 @@ export default function ApplyGuide() {
                         </div>
 </div>
 <div className="flex-1 h-48 md:h-full rounded-xl overflow-hidden relative border border-white/10">
-<img alt="Step 2" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" data-alt="A sleek, high-contrast illustration of a computer context menu hovering over a dark background. The menu is styled with glassmorphism, featuring a subtle backdrop blur and a thin, glowing yellow border. The 'Properties' option is highlighted with a neon yellow accent. The lighting is soft but impactful, emphasizing the modern, maximalist-lite UI design language." src="/assets/icons/anime_shonen.png"/>
+<img alt="Step 2" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" data-alt="A sleek, high-contrast illustration of a computer context menu hovering over a dark background. The menu is styled with glassmorphism, featuring a subtle backdrop blur and a thin, glowing yellow border. The 'Properties' option is highlighted with a neon yellow accent. The lighting is soft but impactful, emphasizing the modern, maximalist-lite UI design language." src="./assets/icons/anime_shonen.png"/>
 </div>
 </div>
 </div>
@@ -56,7 +56,7 @@ export default function ApplyGuide() {
 <span className="text-xs font-semibold text-white/50 uppercase tracking-[0.15em]">Step 03</span>
 </div>
 <div className="w-full h-48 rounded-xl mb-6 overflow-hidden relative border border-white/10">
-<img alt="Step 3" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" data-alt="A vibrant, stylized depiction of a Windows 'Properties' dialog box, reimagined with a dark mode, cyberpunk aesthetic. The dialog box has a semi-transparent glassmorphic body with glowing red and orange neon outlines. The 'Customize' tab is prominently active, shining with a subtle internal glow against the deep black background. The overall mood is high-tech and visually energetic." src="/assets/icons/anime_cyber_moon.png"/>
+<img alt="Step 3" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" data-alt="A vibrant, stylized depiction of a Windows 'Properties' dialog box, reimagined with a dark mode, cyberpunk aesthetic. The dialog box has a semi-transparent glassmorphic body with glowing red and orange neon outlines. The 'Customize' tab is prominently active, shining with a subtle internal glow against the deep black background. The overall mood is high-tech and visually energetic." src="./assets/icons/anime_cyber_moon.png"/>
 </div>
 <h3 className="text-2xl font-medium text-white mb-4 tracking-tight">Hit 'Customize'</h3>
 <p className="text-white/50 font-light leading-relaxed flex-grow">
@@ -70,7 +70,7 @@ export default function ApplyGuide() {
 <span className="text-xs font-semibold text-white/50 uppercase tracking-[0.15em]">Step 04</span>
 </div>
 <div className="w-full h-48 rounded-xl mb-6 overflow-hidden relative border border-white/10">
-<img alt="Step 4" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" data-alt="A close-up, high-end digital illustration of a 'Change Icon' button in a futuristic UI. The button is styled as a glowing, neon green pill shape on a deep obsidian background, surrounded by subtle particle effects. The typography on the button is bold and stark black, contrasting sharply with the luminous green. The scene exudes a tech-optimistic, premium digital vibe." src="/assets/icons/starry_night.png"/>
+<img alt="Step 4" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" data-alt="A close-up, high-end digital illustration of a 'Change Icon' button in a futuristic UI. The button is styled as a glowing, neon green pill shape on a deep obsidian background, surrounded by subtle particle effects. The typography on the button is bold and stark black, contrasting sharply with the luminous green. The scene exudes a tech-optimistic, premium digital vibe." src="./assets/icons/starry_night.png"/>
 </div>
 <h3 className="text-2xl font-medium text-white mb-4 tracking-tight">Change Icon</h3>
 <p className="text-white/50 font-light leading-relaxed flex-grow">
@@ -84,7 +84,7 @@ export default function ApplyGuide() {
 <span className="text-xs font-semibold text-white/50 uppercase tracking-[0.15em]">Step 05</span>
 </div>
 <div className="w-full h-48 rounded-xl mb-6 overflow-hidden relative border border-white/10">
-<img alt="Step 5" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" data-alt="A dynamic, glassmorphic file explorer window floating in a dark, neon-lit digital space. The window displays a grid of various stylized, high-contrast folder icons, emitting soft purple and yellow glows. A bright yellow cursor arrow is actively selecting one of the custom icons. The aesthetic is heavily influenced by modern Gen Z digital art, blending sleek utility with playful chaos." src="/assets/icons/flame_folder.png"/>
+<img alt="Step 5" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" data-alt="A dynamic, glassmorphic file explorer window floating in a dark, neon-lit digital space. The window displays a grid of various stylized, high-contrast folder icons, emitting soft purple and yellow glows. A bright yellow cursor arrow is actively selecting one of the custom icons. The aesthetic is heavily influenced by modern Gen Z digital art, blending sleek utility with playful chaos." src="./assets/icons/flame_folder.png"/>
 </div>
 <h3 className="text-2xl font-medium text-white mb-4 tracking-tight">Browse &amp; Select</h3>
 <p className="text-white/50 font-light leading-relaxed flex-grow">
@@ -104,7 +104,7 @@ export default function ApplyGuide() {
                     </p>
 </div>
 <div className="flex-1 w-full h-64 md:h-80 rounded-xl overflow-hidden relative border border-white/10 shadow-2xl">
-<img alt="Step 6" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" data-alt="A celebratory, high-energy digital artwork showing a desktop interface where a standard folder transforms into a vibrant, custom green neon icon. The background is a deep, dark mesh gradient with floating, glowing geometric particles. The newly applied icon sits proudly on a glassmorphic pedestal, radiating a bright, optimistic aura. The style is maximalist-lite, premium, and undeniably modern." src="/assets/icons/zen_bamboo.png"/>
+<img alt="Step 6" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" data-alt="A celebratory, high-energy digital artwork showing a desktop interface where a standard folder transforms into a vibrant, custom green neon icon. The background is a deep, dark mesh gradient with floating, glowing geometric particles. The newly applied icon sits proudly on a glassmorphic pedestal, radiating a bright, optimistic aura. The style is maximalist-lite, premium, and undeniably modern." src="./assets/icons/zen_bamboo.png"/>
 </div>
 </div>
 </div>

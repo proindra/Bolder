@@ -115,7 +115,7 @@ export default function Pricing() {
 <div className="glass-card rounded-xl p-lg flex items-center gap-lg">
 <div className="w-24 h-24 rounded-lg overflow-hidden shrink-0 relative">
 <div className="absolute inset-0 bg-black/20 z-10"></div>
-<img alt="" className="w-full h-full object-cover" data-alt="A sleek, high-tech abstract 3D composition featuring deep blue and dark grey geometric forms with glowing cyan accents. The scene is illuminated by dramatic, high-contrast cinematic lighting, emphasizing a premium, professional tech aesthetic. The mood is precise, futuristic, and calm." src="/assets/icons/flame_folder.png"/>
+<img alt="" className="w-full h-full object-cover" data-alt="A sleek, high-tech abstract 3D composition featuring deep blue and dark grey geometric forms with glowing cyan accents. The scene is illuminated by dramatic, high-contrast cinematic lighting, emphasizing a premium, professional tech aesthetic. The mood is precise, futuristic, and calm." src="./assets/icons/flame_folder.png"/>
 </div>
 <div>
 <h4 className="font-h3 text-[20px] text-white mb-2">Enterprise Ready</h4>
@@ -125,7 +125,7 @@ export default function Pricing() {
 <div className="glass-card rounded-xl p-lg flex items-center gap-lg">
 <div className="w-24 h-24 rounded-lg overflow-hidden shrink-0 relative">
 <div className="absolute inset-0 bg-black/20 z-10"></div>
-<img alt="" className="w-full h-full object-cover" data-alt="A macro shot of a meticulously machined metal surface illuminated by a warm, golden orange light. The interplay of deep shadows and gleaming metallic textures conveys a sense of high-performance engineering and premium build quality. The aesthetic is industrial, modern, and cinematic." src="/assets/icons/zen_bamboo.png"/>
+<img alt="" className="w-full h-full object-cover" data-alt="A macro shot of a meticulously machined metal surface illuminated by a warm, golden orange light. The interplay of deep shadows and gleaming metallic textures conveys a sense of high-performance engineering and premium build quality. The aesthetic is industrial, modern, and cinematic." src="./assets/icons/zen_bamboo.png"/>
 </div>
 <div>
 <h4 className="font-h3 text-[20px] text-white mb-2">Secure &amp; Private</h4>

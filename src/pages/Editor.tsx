@@ -16,17 +16,17 @@ export default function Editor() {
 <span className="font-label-sm text-label-sm bg-primary-container text-white px-2 py-1 rounded">PRO</span>
 <span className="material-symbols-outlined text-white/50">favorite</span>
 </div>
-<img alt="Abstract pink digital art piece representing a bold folder preset." className="w-full h-32 object-cover rounded-lg mb-4" src="/assets/icons/anime_pink_kawaii.png"/>
+<img alt="Abstract pink digital art piece representing a bold folder preset." className="w-full h-32 object-cover rounded-lg mb-4" src="./assets/icons/anime_pink_kawaii.png"/>
 <h3 className="font-medium text-lg text-white mb-1">Neon Pulse</h3>
 <p className="text-xs text-white/50 font-label-sm uppercase tracking-widest">12 VARIATIONS</p>
 </div>
 <div className="glass-panel rounded-2xl p-6 cursor-pointer hover:bg-white/[0.04] transition-colors duration-300">
-<img alt="Yellow abstract digital art piece representing a bold folder preset." className="w-full h-32 object-cover rounded-lg mb-4" src="/assets/icons/anime_shonen.png"/>
+<img alt="Yellow abstract digital art piece representing a bold folder preset." className="w-full h-32 object-cover rounded-lg mb-4" src="./assets/icons/anime_shonen.png"/>
 <h3 className="font-medium text-lg text-white mb-1">Solar Flare</h3>
 <p className="text-xs text-white/50 font-label-sm uppercase tracking-widest">8 VARIATIONS</p>
 </div>
 <div className="glass-panel rounded-2xl p-6 cursor-pointer hover:bg-white/[0.04] transition-colors duration-300">
-<img alt="Red abstract digital art piece representing a bold folder preset." className="w-full h-32 object-cover rounded-lg mb-4" src="/assets/icons/flame_folder.png"/>
+<img alt="Red abstract digital art piece representing a bold folder preset." className="w-full h-32 object-cover rounded-lg mb-4" src="./assets/icons/flame_folder.png"/>
 <h3 className="font-medium text-lg text-white mb-1">Crimson Void</h3>
 <p className="text-xs text-white/50 font-label-sm uppercase tracking-widest">5 VARIATIONS</p>
 </div>
@@ -54,7 +54,7 @@ export default function Editor() {
 <div className="absolute inset-0 opacity-20" style={{ "backgroundImage": "radial-gradient(circle at 1px 1px, rgba(255,255,255,0.1) 1px, transparent 0)", "backgroundSize": "24px 24px" }}></div>
 {/**/}
 <div className="relative w-full max-w-md aspect-square rounded-2xl overflow-hidden shadow-2xl border border-white/10 group-hover:scale-[1.02] transition-transform duration-700 ease-out">
-<img alt="Main canvas digital art piece." className="w-full h-full object-cover" src="/assets/icons/skeuomorphic_folder.png"/>
+<img alt="Main canvas digital art piece." className="w-full h-full object-cover" src="./assets/icons/skeuomorphic_folder.png"/>
 {/**/}
 <div className="absolute -top-4 -right-4 bg-primary-container text-white font-label-sm text-label-sm px-4 py-1.5 rounded-full rotate-[12deg] shadow-lg border border-white/20 z-10 tracking-widest">
                         *NEW*
@@ -79,7 +79,7 @@ export default function Editor() {
 <h3 className="font-label-sm text-label-sm text-white/50 mb-6 uppercase tracking-widest">Base Structure</h3>
 <div className="space-y-4">
 <div className="flex items-center gap-4 bg-white/5 p-3 rounded-xl border border-white/5">
-<img alt="Green structural element." className="w-12 h-12 rounded-lg object-cover" src="/assets/icons/zen_bamboo.png"/>
+<img alt="Green structural element." className="w-12 h-12 rounded-lg object-cover" src="./assets/icons/zen_bamboo.png"/>
 <div className="flex-grow">
 <p className="text-sm font-medium text-white">Geometry 01</p>
 <p className="text-xs text-white/50 mt-0.5">Visible</p>
@@ -87,7 +87,7 @@ export default function Editor() {
 <span className="material-symbols-outlined text-white/50 hover:text-white cursor-pointer transition-colors">visibility</span>
 </div>
 <div className="flex items-center gap-4 bg-white/5 p-3 rounded-xl border border-white/5">
-<img alt="Blue structural element." className="w-12 h-12 rounded-lg object-cover opacity-50" src="/assets/icons/starry_night.png"/>
+<img alt="Blue structural element." className="w-12 h-12 rounded-lg object-cover opacity-50" src="./assets/icons/starry_night.png"/>
 <div className="flex-grow">
 <p className="text-sm font-medium text-white/50">Texture 02</p>
 <p className="text-xs text-white/40 mt-0.5">Hidden</p>
@@ -139,7 +139,7 @@ export default function Editor() {
 <div className="glass-panel rounded-2xl p-6 relative overflow-hidden">
 <h3 className="font-label-sm text-label-sm text-white/50 mb-4 uppercase tracking-widest">Render Node</h3>
 <div className="relative h-24 rounded-xl overflow-hidden border border-white/10">
-<img alt="Map of Tokyo rendering node." className="w-full h-full object-cover opacity-60 mix-blend-luminosity" src="/assets/icons/anime_cyber_moon.png"/>
+<img alt="Map of Tokyo rendering node." className="w-full h-full object-cover opacity-60 mix-blend-luminosity" src="./assets/icons/anime_cyber_moon.png"/>
 <div className="absolute inset-0 bg-primary-container/10 mix-blend-color"></div>
 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-primary-container rounded-full shadow-[0_0_15px_rgba(255,107,0,1)] animate-pulse"></div>
 </div>
