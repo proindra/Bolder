@@ -6,6 +6,7 @@ import Pricing from './pages/Pricing';
 import TemplatesGallery from './pages/TemplatesGallery';
 import CommunityShowcase from './pages/CommunityShowcase';
 import ApplyGuide from './pages/ApplyGuide';
+import Features from './pages/Features';
 import Editor from './pages/Editor';
 import './App.css';
 
@@ -29,6 +30,7 @@ function App() {
             <Route path="/templates" element={<TemplatesGallery />} />
             <Route path="/community" element={<CommunityShowcase />} />
             <Route path="/apply" element={<ApplyGuide />} />
+            <Route path="/features" element={<Features />} />
             <Route path="/editor" element={<Editor />} />
           </Routes>
         </main>
