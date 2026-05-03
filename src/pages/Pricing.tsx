@@ -27,7 +27,7 @@ export default function Pricing() {
             <p className="text-sm text-white/50 min-h-[40px] leading-relaxed">Perfect for individuals getting started with custom icon design.</p>
           </div>
           <div className="mb-8">
-            <span className="text-5xl font-bold text-white tracking-tighter">$0</span>
+            <span className="text-5xl font-bold text-white tracking-tighter">₹0</span>
             <span className="text-sm text-white/50 ml-1">/month</span>
           </div>
           <ul className="space-y-3.5 mb-8 flex-grow">
@@ -63,7 +63,7 @@ export default function Pricing() {
             <p className="text-sm text-white/50 min-h-[40px] leading-relaxed">For professionals who need unlimited freedom and format flexibility.</p>
           </div>
           <div className="mb-8 relative">
-            <span className="text-5xl font-bold text-white tracking-tighter">$19</span>
+            <span className="text-5xl font-bold text-white tracking-tighter">₹19</span>
             <span className="text-sm text-white/50 ml-1">/month</span>
           </div>
           <ul className="space-y-3.5 mb-8 flex-grow relative">
@@ -87,7 +87,7 @@ export default function Pricing() {
             <p className="text-sm text-white/50 min-h-[40px] leading-relaxed">Collaborative features for agencies and design teams.</p>
           </div>
           <div className="mb-8">
-            <span className="text-5xl font-bold text-white tracking-tighter">$49</span>
+            <span className="text-5xl font-bold text-white tracking-tighter">₹49</span>
             <span className="text-sm text-white/50 ml-1">/month</span>
           </div>
           <ul className="space-y-3.5 mb-8 flex-grow">
