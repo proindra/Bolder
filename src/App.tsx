@@ -8,7 +8,7 @@ import CommunityShowcase from './pages/CommunityShowcase';
 import ApplyGuide from './pages/ApplyGuide';
 import Features from './pages/Features';
 import Editor from './pages/Editor';
-import './App.css';
+
 
 function App() {
   return (
