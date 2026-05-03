@@ -22,6 +22,7 @@ export default function Footer() {
             <div className="flex flex-col gap-3">
               <Link className="text-sm text-white/50 hover:text-white transition-colors" to="/templates">Templates</Link>
               <Link className="text-sm text-white/50 hover:text-white transition-colors" to="/editor">Editor</Link>
+              <Link className="text-sm text-white/50 hover:text-white transition-colors" to="/apply">Apply Icons</Link>
               <Link className="text-sm text-white/50 hover:text-white transition-colors" to="/pricing">Pricing</Link>
             </div>
           </div>

@@ -17,6 +17,7 @@ export default function TopNavBar() {
         <Link className={isActive('/features')} to="/features">Features</Link>
         <Link className={isActive('/templates')} to="/templates">Templates</Link>
         <Link className={isActive('/community')} to="/community">Community</Link>
+        <Link className={isActive('/apply')} to="/apply">Apply Icons</Link>
         <Link className={isActive('/pricing')} to="/pricing">Pricing</Link>
       </div>
       <Link to="/editor">

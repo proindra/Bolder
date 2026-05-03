@@ -127,9 +127,14 @@ export default function LandingPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary-container/5 pointer-events-none" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary-container rounded-full blur-[200px] opacity-10 pointer-events-none" />
         <h2 className="text-4xl md:text-6xl font-medium text-white mb-8 relative z-10 tracking-tighter">Ready to Build?</h2>
-        <button className="relative z-10 bg-primary-container text-white text-base px-10 py-4 rounded-full hover:-translate-y-1 hover:shadow-[0_0_40px_rgba(255,107,0,0.4)] transition-all duration-500 font-medium tracking-wide">
-          Get Bolder Free
-        </button>
+        <div className="flex items-center justify-center gap-4 relative z-10 flex-wrap">
+          <button className="bg-primary-container text-white text-base px-10 py-4 rounded-full hover:-translate-y-1 hover:shadow-[0_0_40px_rgba(255,107,0,0.4)] transition-all duration-500 font-medium tracking-wide">
+            Get Bolder Free
+          </button>
+          <a href="#/apply" className="border border-white/20 text-white bg-white/5 backdrop-blur-md text-base px-10 py-4 rounded-full hover:bg-white/10 transition-all duration-300 font-medium">
+            How to Apply Icons →
+          </a>
+        </div>
       </section>
     </>
   );
