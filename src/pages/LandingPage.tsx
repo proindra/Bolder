@@ -26,10 +26,10 @@ export default function LandingPage() {
           <button className="bg-primary-container text-white text-sm md:text-base px-8 py-3.5 rounded-full neon-glow hover:opacity-90 hover:-translate-y-1 transition-all duration-300 font-medium tracking-wide">
             Ignite Ideas
           </button>
-          <button className="border border-white/20 text-white bg-white/5 backdrop-blur-md px-8 py-3.5 rounded-full text-sm md:text-base hover:bg-white/10 transition-all duration-300 flex items-center gap-2 font-medium">
+          <a href="https://youtu.be/gTbrFggLJLs?si=Zi90jm9tTyf4rwNL" target="_blank" rel="noopener noreferrer" className="border border-white/20 text-white bg-white/5 backdrop-blur-md px-8 py-3.5 rounded-full text-sm md:text-base hover:bg-white/10 transition-all duration-300 flex items-center gap-2 font-medium">
             <span className="material-symbols-outlined text-[18px]" data-icon="play_arrow">play_arrow</span>
             Watch Demo
-          </button>
+          </a>
         </div>
       </section>
 
