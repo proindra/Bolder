@@ -1,133 +1,117 @@
 
 export default function TemplatesGallery() {
+  const filters = ['All', 'Minimal', 'Vibrant', 'Dark', 'Neon'];
+
+  const templates = [
+    {
+      title: 'Cyberpunk Essentials',
+      desc: 'Neon accents & stark contrasts.',
+      badge: 'PRO',
+      badgeColor: 'text-primary-container border-primary-container/40 bg-primary-container/10',
+      images: ['./assets/icons/anime_cyber_moon.png', './assets/icons/flame_folder.png'],
+    },
+    {
+      title: 'Minimalist Mono',
+      desc: 'Clean lines, pure focus.',
+      badge: 'FREE',
+      badgeColor: 'text-white/50 border-white/20 bg-white/5',
+      images: ['./assets/icons/anime_shonen.png', './assets/icons/skeuomorphic_folder.png'],
+    },
+    {
+      title: 'Pastel Dreams',
+      desc: 'Soft gradients & ethereal vibes.',
+      badge: 'FREE',
+      badgeColor: 'text-white/50 border-white/20 bg-white/5',
+      images: ['./assets/icons/anime_pink_kawaii.png', './assets/icons/starry_night.png'],
+    },
+    {
+      title: 'Studio Pro',
+      desc: 'High-fidelity tools for creators.',
+      badge: 'PRO',
+      badgeColor: 'text-primary-container border-primary-container/40 bg-primary-container/10',
+      images: ['./assets/icons/skeuomorphic_folder.png', './assets/icons/zen_bamboo.png'],
+    },
+  ];
+
   return (
     <>
-      
-{/**/}
-<section className="mb-xl">
-<h1 className="font-display text-display text-on-surface mb-lg">Template Gallery</h1>
-<div className="flex flex-col md:flex-row gap-lg items-center glass-card p-lg rounded-xl glow-effect">
-<div className="relative w-full md:w-96">
-<span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-tertiary-container pointer-events-none">search</span>
-<input className="w-full bg-[#050505] text-on-surface border border-outline-variant focus:border-primary-container rounded-lg py-2 pl-10 pr-4 shadow-[inset_0_2px_4px_rgba(0,0,0,0.5)] outline-none transition-colors font-body-md placeholder:text-tertiary-container" placeholder="Search templates..." type="text"/>
-</div>
-<div className="flex flex-wrap gap-sm">
-<button className="px-4 py-1.5 rounded-full border border-white/10 bg-surface-container-high text-on-surface font-label-sm text-label-sm hover:bg-surface-bright transition-colors">All</button>
-<button className="px-4 py-1.5 rounded-full border border-white/10 bg-surface-container text-tertiary-container font-label-sm text-label-sm hover:bg-surface-bright hover:text-on-surface transition-colors">Minimal</button>
-<button className="px-4 py-1.5 rounded-full border border-white/10 bg-surface-container text-tertiary-container font-label-sm text-label-sm hover:bg-surface-bright hover:text-on-surface transition-colors">Vibrant</button>
-<button className="px-4 py-1.5 rounded-full border border-white/10 bg-surface-container text-tertiary-container font-label-sm text-label-sm hover:bg-surface-bright hover:text-on-surface transition-colors">Dark</button>
-<button className="px-4 py-1.5 rounded-full border border-white/10 bg-surface-container text-tertiary-container font-label-sm text-label-sm hover:bg-surface-bright hover:text-on-surface transition-colors">Neon</button>
-</div>
-</div>
-</section>
-{/**/}
-<section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-xl">
-{/**/}
-<article className="glass-card rounded-xl p-lg flex flex-col group relative overflow-hidden glow-effect transition-transform hover:-translate-y-1 duration-300">
-<div className="absolute -z-10 w-[200%] h-[200%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[radial-gradient(circle,rgba(255,107,0,0.05)_0%,transparent_60%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-<div className="flex justify-between items-start mb-lg">
-<div>
-<h3 className="font-h3 text-h3 text-on-surface mb-xs">Cyberpunk Essentials</h3>
-<p className="font-body-md text-body-md text-tertiary-container">Neon accents &amp; stark contrasts.</p>
-</div>
-<span className="bg-surface-container px-2 py-1 rounded-sm border border-outline-variant text-primary-container font-label-sm text-label-sm flex items-center gap-1">
-<span className="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
-                        PRO
-                    </span>
-</div>
-<div className="grid grid-cols-2 gap-sm mb-lg flex-grow">
-<div className="aspect-square bg-surface-container-lowest rounded-lg border border-outline-variant overflow-hidden relative">
-<img alt="A striking digital installation art piece featuring glowing, generative geometric shapes suspended in a vast, minimalist gallery space. The room is illuminated by high-key, soft white lighting that creates a bright, modern light-mode aesthetic. The artwork relies on a sophisticated palette of deep blacks and pristine whites, punctuated by intense accents of vibrant red. The mood is serene yet technologically advanced." className="w-full h-full object-cover opacity-80 mix-blend-screen grayscale-[50%]" data-alt="A striking digital installation art piece featuring glowing, generative geometric shapes suspended in a vast, minimalist gallery space. The room is illuminated by high-key, soft white lighting that creates a bright, modern light-mode aesthetic. The artwork relies on a sophisticated palette of deep blacks and pristine whites, punctuated by intense accents of vibrant red. The mood is serene yet technologically advanced." src="./assets/icons/anime_cyber_moon.png"/>
-</div>
-<div className="aspect-square bg-surface-container-lowest rounded-lg border border-outline-variant overflow-hidden relative">
-<img alt="A close up shot of a sleek, dark metallic surface with intricate, glowing orange circuitry patterns etched into it. The scene represents a high-performance computing environment with a dark mode aesthetic. The lighting is low and moody, emphasizing the glowing orange lines against the deep blacks and subtle greys. The mood is highly technical and powerful." className="w-full h-full object-cover opacity-80 mix-blend-screen grayscale-[50%]" data-alt="A close up shot of a sleek, dark metallic surface with intricate, glowing orange circuitry patterns etched into it. The scene represents a high-performance computing environment with a dark mode aesthetic. The lighting is low and moody, emphasizing the glowing orange lines against the deep blacks and subtle greys. The mood is highly technical and powerful." src="./assets/icons/flame_folder.png"/>
-</div>
-</div>
-<button className="w-full py-2 bg-transparent border border-white/10 rounded-DEFAULT text-on-surface font-label-sm text-label-sm hover:bg-white/5 transition-colors flex items-center justify-center gap-2">
-<span className="material-symbols-outlined text-[16px]">visibility</span>
-                    Preview Collection
-                </button>
-</article>
-{/**/}
-<article className="glass-card rounded-xl p-lg flex flex-col group relative overflow-hidden glow-effect transition-transform hover:-translate-y-1 duration-300">
-<div className="absolute -z-10 w-[200%] h-[200%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[radial-gradient(circle,rgba(255,255,255,0.03)_0%,transparent_60%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-<div className="flex justify-between items-start mb-lg">
-<div>
-<h3 className="font-h3 text-h3 text-on-surface mb-xs">Minimalist Mono</h3>
-<p className="font-body-md text-body-md text-tertiary-container">Clean lines, pure focus.</p>
-</div>
-<span className="bg-surface-container px-2 py-1 rounded-sm border border-outline-variant text-tertiary-container font-label-sm text-label-sm">
-                        FREE
-                    </span>
-</div>
-<div className="grid grid-cols-2 gap-sm mb-lg flex-grow">
-<div className="aspect-square bg-surface-container-lowest rounded-lg border border-outline-variant overflow-hidden relative flex items-center justify-center">
-<span className="material-symbols-outlined text-4xl text-tertiary-fixed-dim" style={{ "fontVariationSettings": "'wght' 200" }}>folder_open</span>
-</div>
-<div className="aspect-square bg-surface-container-lowest rounded-lg border border-outline-variant overflow-hidden relative">
-<img alt="A minimalist architectural space featuring smooth concrete surfaces and sharp, angular shadows. The environment is rendered in stark black and white with a subtle, atmospheric noise grain. The lighting is dramatic and directional, creating a sense of depth and precision. The overall aesthetic is highly technical, clean, and silent, representing a sophisticated dark-mode UI style." className="w-full h-full object-cover opacity-60 grayscale" data-alt="A minimalist architectural space featuring smoothংকার smooth concrete surfaces and sharp, angular shadows. The environment is rendered in stark black and white with a subtle, atmospheric noise grain. The lighting is dramatic and directional, creating a sense of depth and precision. The overall aesthetic is highly technical, clean, and silent, representing a sophisticated dark-mode UI style." src="./assets/icons/anime_shonen.png"/>
-</div>
-</div>
-<button className="w-full py-2 bg-transparent border border-white/10 rounded-DEFAULT text-on-surface font-label-sm text-label-sm hover:bg-white/5 transition-colors flex items-center justify-center gap-2">
-<span className="material-symbols-outlined text-[16px]">visibility</span>
-                    Preview Collection
-                </button>
-</article>
-{/**/}
-<article className="glass-card rounded-xl p-lg flex flex-col group relative overflow-hidden glow-effect transition-transform hover:-translate-y-1 duration-300">
-<div className="absolute -z-10 w-[200%] h-[200%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[radial-gradient(circle,rgba(202,190,255,0.05)_0%,transparent_60%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-<div className="flex justify-between items-start mb-lg">
-<div>
-<h3 className="font-h3 text-h3 text-on-surface mb-xs">Pastel Dreams</h3>
-<p className="font-body-md text-body-md text-tertiary-container">Soft gradients &amp; ethereal vibes.</p>
-</div>
-</div>
-<div className="grid grid-cols-2 gap-sm mb-lg flex-grow">
-<div className="aspect-square bg-surface-container-lowest rounded-lg border border-outline-variant overflow-hidden relative">
-<img alt="A collection of soft, blurred, pastel-colored orbs floating in a dark, infinite space. The colors are muted pinks, purples, and soft yellows, contrasting against the deep black background. The light source is gentle and diffused, creating a dreamy, ethereal atmosphere. The visual style represents a delicate glassmorphic UI approach within a dark mode theme." className="w-full h-full object-cover opacity-70 mix-blend-screen" data-alt="A collection of soft, blurred, pastel-colored orbs floating in a dark, infinite space. The colors are muted pinks, purples, and soft yellows, contrasting against the deep black background. The light source is gentle and diffused, creating a dreamy, ethereal atmosphere. The visual style represents a delicate glassmorphic UI approach within a dark mode theme." src="./assets/icons/anime_pink_kawaii.png"/>
-</div>
-<div className="aspect-square bg-surface-container-lowest rounded-lg border border-outline-variant overflow-hidden relative">
-<img alt="A serene landscape rendered as low-poly digital art, featuring subtle pastel hues of violet and soft green against a dark, starry sky. The geometric shapes create sharp edges that contrast with the gentle colors. The lighting simulates a soft moonlight, providing a calm, focused mood suitable for a premium technical UI design." className="w-full h-full object-cover opacity-70 mix-blend-screen" data-alt="A serene landscape rendered as low-poly digital art, featuring subtle pastel hues of violet and soft green against a dark, starry sky. The geometric shapes create sharp edges that contrast with the gentle colors. The lighting simulates a soft moonlight, providing a calm, focused mood suitable for a premium technical UI design." src="./assets/icons/starry_night.png"/>
-</div>
-</div>
-<button className="w-full py-2 bg-transparent border border-white/10 rounded-DEFAULT text-on-surface font-label-sm text-label-sm hover:bg-white/5 transition-colors flex items-center justify-center gap-2">
-<span className="material-symbols-outlined text-[16px]">visibility</span>
-                    Preview Collection
-                </button>
-</article>
-{/**/}
-<article className="glass-card rounded-xl p-lg flex flex-col group relative overflow-hidden glow-effect transition-transform hover:-translate-y-1 duration-300">
-<div className="absolute -z-10 w-[200%] h-[200%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[radial-gradient(circle,rgba(255,255,255,0.05)_0%,transparent_60%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-<div className="flex justify-between items-start mb-lg">
-<div>
-<h3 className="font-h3 text-h3 text-on-surface mb-xs">Studio Pro</h3>
-<p className="font-body-md text-body-md text-tertiary-container">High-fidelity tools for creators.</p>
-</div>
-<span className="bg-surface-container px-2 py-1 rounded-sm border border-outline-variant text-primary-container font-label-sm text-label-sm flex items-center gap-1">
-<span className="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
-                        PRO
-                    </span>
-</div>
-<div className="grid grid-cols-2 gap-sm mb-lg flex-grow">
-<div className="aspect-square bg-surface-container-lowest rounded-lg border border-outline-variant overflow-hidden relative">
-<img alt="A highly detailed, macro shot of a camera lens element reflecting a stark, geometric studio lighting setup. The metallic textures of the lens barrel are deep blacks and gunmetal greys, with sharp highlights. The overall mood is professional, precise, and engineered, fitting perfectly into a cinematic dark mode design system." className="w-full h-full object-cover opacity-80 grayscale-[30%]" data-alt="A highly detailed, macro shot of a camera lens element reflecting a stark, geometric studio lighting setup. The metallic textures of the lens barrel are deep blacks and gunmetal greys, with sharp highlights. The overall mood is professional, precise, and engineered, fitting perfectly into a cinematic dark mode design system." src="./assets/icons/skeuomorphic_folder.png"/>
-</div>
-<div className="aspect-square bg-surface-container-lowest rounded-lg border border-outline-variant overflow-hidden relative flex items-center justify-center">
-<span className="material-symbols-outlined text-4xl text-on-surface" style={{ "fontVariationSettings": "'wght' 300" }}>movie_creation</span>
-</div>
-</div>
-<button className="w-full py-2 bg-transparent border border-white/10 rounded-DEFAULT text-on-surface font-label-sm text-label-sm hover:bg-white/5 transition-colors flex items-center justify-center gap-2">
-<span className="material-symbols-outlined text-[16px]">visibility</span>
-                    Preview Collection
-                </button>
-</article>
-</section>
-{/**/}
-<div className="hidden">
-<img alt="Hidden placeholder 1" data-alt="Abstract geometric shapes in dark mode." src="./assets/icons/zen_bamboo.png"/>
-<img alt="Hidden placeholder 2" data-alt="Abstract geometric shapes in dark mode." src="./assets/icons/anime_pink_kawaii.png"/>
-</div>
+      {/* ── Header & Filter Bar ───────────────────────── */}
+      <section className="mb-10">
+        <h1 className="text-4xl md:text-5xl font-medium text-white tracking-tighter mb-8">Template Gallery</h1>
+        <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center glass-card p-5 rounded-2xl">
+          <div className="relative w-full sm:w-72 shrink-0">
+            <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-white/40 pointer-events-none text-[20px]">search</span>
+            <input
+              className="w-full bg-white/5 text-white border border-white/10 focus:border-primary-container/60 rounded-xl py-2.5 pl-10 pr-4 outline-none transition-colors text-sm placeholder:text-white/30"
+              placeholder="Search templates…"
+              type="text"
+            />
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {filters.map((f, i) => (
+              <button
+                key={f}
+                className={`px-4 py-1.5 rounded-full border text-xs font-medium transition-colors ${
+                  i === 0
+                    ? 'border-primary-container/60 bg-primary-container/15 text-white'
+                    : 'border-white/10 bg-white/5 text-white/50 hover:bg-white/10 hover:text-white'
+                }`}
+              >
+                {f}
+              </button>
+            ))}
+          </div>
+        </div>
+      </section>
 
+      {/* ── Template Cards ────────────────────────────── */}
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+        {templates.map(({ title, desc, badge, badgeColor, images }) => (
+          <article
+            key={title}
+            className="glass-card rounded-2xl p-6 flex flex-col group relative overflow-hidden glow-effect transition-all hover:-translate-y-1 hover:border-white/15 duration-300"
+          >
+            {/* radial hover glow */}
+            <div className="absolute -z-10 w-[200%] h-[200%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[radial-gradient(circle,rgba(255,107,0,0.05)_0%,transparent_60%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+            {/* Top row */}
+            <div className="flex justify-between items-start mb-5">
+              <div>
+                <h3 className="text-lg font-semibold text-white mb-1 tracking-tight">{title}</h3>
+                <p className="text-sm text-white/50">{desc}</p>
+              </div>
+              <span className={`px-2.5 py-1 rounded-md border text-[10px] font-semibold tracking-widest uppercase ${badgeColor}`}>
+                {badge}
+              </span>
+            </div>
+
+            {/* Preview thumbnails */}
+            <div className="grid grid-cols-2 gap-3 mb-5 flex-grow">
+              {images.map((src, idx) => (
+                <div key={idx} className="aspect-square bg-black/20 rounded-xl border border-white/8 overflow-hidden">
+                  <img
+                    alt={title}
+                    className="w-full h-full object-cover opacity-85 mix-blend-luminosity group-hover:opacity-100 transition-opacity duration-500"
+                    src={src}
+                  />
+                </div>
+              ))}
+            </div>
+
+            {/* Action */}
+            <button className="w-full py-2.5 bg-transparent border border-white/10 rounded-xl text-sm text-white/70 hover:bg-white/5 hover:text-white transition-colors flex items-center justify-center gap-2 font-medium">
+              <span className="material-symbols-outlined text-[16px]">visibility</span>
+              Preview Collection
+            </button>
+          </article>
+        ))}
+      </section>
+
+      {/* ── Hidden preloads ───────────────────────────── */}
+      <div className="hidden" aria-hidden="true">
+        <img alt="" src="./assets/icons/zen_bamboo.png" />
+        <img alt="" src="./assets/icons/anime_pink_kawaii.png" />
+      </div>
     </>
   );
 }

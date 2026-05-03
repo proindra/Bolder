@@ -22,7 +22,7 @@ function App() {
 
         <TopNavBar />
         
-        <main className="flex-grow z-10 pt-24 pb-20 px-4 md:px-8 max-w-[1440px] mx-auto w-full">
+        <main className="flex-grow z-10 pt-28 pb-24 px-5 md:px-10 max-w-[1440px] mx-auto w-full">
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/pricing" element={<Pricing />} />
