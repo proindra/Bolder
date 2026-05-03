@@ -80,7 +80,7 @@ export default function Pricing() {
           </div>
           <div className="mb-8">
             <span className="text-5xl font-bold text-white tracking-tighter">₹0</span>
-            <span className="text-sm text-white/50 ml-1">/month</span>
+            <span className="text-sm text-white/50 ml-1">/lifetime</span>
           </div>
           <ul className="space-y-3.5 mb-8 flex-grow">
             <li className="flex items-start gap-3">
@@ -121,7 +121,7 @@ export default function Pricing() {
             {couponState === 'success' && (
               <span className="text-2xl font-bold text-white/40 line-through tracking-tighter">₹19</span>
             )}
-            <span className="text-sm text-white/50">/month</span>
+            <span className="text-sm text-white/50">/lifetime</span>
           </div>
           <ul className="space-y-3.5 mb-8 flex-grow relative">
             {['Unlimited presets', '.ico & PNG export', 'Custom icon overlays', 'High-res vector output'].map(f => (
