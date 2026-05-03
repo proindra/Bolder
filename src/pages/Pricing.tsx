@@ -114,9 +114,14 @@ export default function Pricing() {
             </div>
             <p className="text-sm text-white/50 min-h-[40px] leading-relaxed">For professionals who need unlimited freedom and format flexibility.</p>
           </div>
-          <div className="mb-8 relative">
-            <span className="text-5xl font-bold text-white tracking-tighter">₹19</span>
-            <span className="text-sm text-white/50 ml-1">/month</span>
+          <div className="mb-8 relative flex items-baseline gap-2">
+            <span className="text-5xl font-bold text-white tracking-tighter">
+              ₹{couponState === 'success' ? '15' : '19'}
+            </span>
+            {couponState === 'success' && (
+              <span className="text-2xl font-bold text-white/40 line-through tracking-tighter">₹19</span>
+            )}
+            <span className="text-sm text-white/50">/month</span>
           </div>
           <ul className="space-y-3.5 mb-8 flex-grow relative">
             {['Unlimited presets', '.ico & PNG export', 'Custom icon overlays', 'High-res vector output'].map(f => (
