@@ -137,29 +137,6 @@ export default function Pricing() {
         </div>
       </div>
 
-      {/* ── Bottom Feature Banners ────────────────────── */}
-      <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-5 max-w-6xl mx-auto">
-        <div className="glass-card rounded-2xl p-6 flex items-center gap-6">
-          <div className="w-20 h-20 rounded-xl overflow-hidden shrink-0 relative">
-            <div className="absolute inset-0 bg-black/20 z-10" />
-            <img alt="Enterprise" className="w-full h-full object-cover" src="./assets/icons/flame_folder.png" />
-          </div>
-          <div>
-            <h4 className="text-lg font-semibold text-white mb-1">Enterprise Ready</h4>
-            <p className="text-sm text-white/50 leading-relaxed">Need custom deployment or SLA? Let's talk.</p>
-          </div>
-        </div>
-        <div className="glass-card rounded-2xl p-6 flex items-center gap-6">
-          <div className="w-20 h-20 rounded-xl overflow-hidden shrink-0 relative">
-            <div className="absolute inset-0 bg-black/20 z-10" />
-            <img alt="Secure" className="w-full h-full object-cover" src="./assets/icons/zen_bamboo.png" />
-          </div>
-          <div>
-            <h4 className="text-lg font-semibold text-white mb-1">Secure &amp; Private</h4>
-            <p className="text-sm text-white/50 leading-relaxed">Your assets are encrypted and stored securely.</p>
-          </div>
-        </div>
-      </div>
     </>
   );
 }
