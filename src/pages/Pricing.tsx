@@ -69,7 +69,7 @@ export default function Pricing() {
       </div>
 
       {/* ── Pricing Cards ────────────────────────────── */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-4xl mx-auto">
 
         {/* Free */}
         <div className="glass-card rounded-2xl p-8 flex flex-col relative overflow-hidden group">
@@ -102,7 +102,7 @@ export default function Pricing() {
         </div>
 
         {/* Pro – featured */}
-        <div className="glass-card rounded-2xl p-8 flex flex-col relative overflow-hidden border-primary-container/30 md:-translate-y-4 shadow-[0_0_50px_rgba(255,107,0,0.1)]">
+        <div className="glass-card rounded-2xl p-8 flex flex-col relative overflow-hidden border-primary-container/30 shadow-[0_0_50px_rgba(255,107,0,0.1)]">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] h-[90px] bg-primary-container blur-[60px] opacity-20 rounded-full pointer-events-none" />
           <div className="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-transparent via-primary-container to-transparent opacity-80" />
           <div className="mb-6 relative">
@@ -128,30 +128,6 @@ export default function Pricing() {
           </ul>
           <button className="w-full py-3 rounded-xl bg-gradient-to-b from-primary-container to-[#cc5500] hover:to-primary-container text-sm text-white tracking-wider uppercase transition-all shadow-[inset_0_1px_0_rgba(255,255,255,0.3)] relative z-10 font-medium">
             Upgrade to Pro
-          </button>
-        </div>
-
-        {/* Team */}
-        <div className="glass-card rounded-2xl p-8 flex flex-col relative overflow-hidden">
-          <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-          <div className="mb-6">
-            <h3 className="text-xl font-semibold text-white mb-2">Team</h3>
-            <p className="text-sm text-white/50 min-h-[40px] leading-relaxed">Collaborative features for agencies and design teams.</p>
-          </div>
-          <div className="mb-8">
-            <span className="text-5xl font-bold text-white tracking-tighter">₹49</span>
-            <span className="text-sm text-white/50 ml-1">/month</span>
-          </div>
-          <ul className="space-y-3.5 mb-8 flex-grow">
-            {['Everything in Pro', 'Shared asset library', 'Priority support', 'Team administration'].map(f => (
-              <li key={f} className="flex items-start gap-3">
-                <span className="material-symbols-outlined text-primary-container text-[18px] mt-0.5">check_circle</span>
-                <span className="text-sm text-white/80">{f}</span>
-              </li>
-            ))}
-          </ul>
-          <button className="w-full py-3 rounded-xl border border-white/10 hover:bg-white/5 text-sm text-white tracking-wider uppercase transition-colors backdrop-blur-md font-medium">
-            Contact Sales
           </button>
         </div>
       </div>
