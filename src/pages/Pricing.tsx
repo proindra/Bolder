@@ -1,5 +1,18 @@
 
+import { useState } from 'react';
+
 export default function Pricing() {
+  const [coupon, setCoupon] = useState('');
+  const [couponState, setCouponState] = useState<'idle' | 'success' | 'error'>('idle');
+
+  const applyCoupon = () => {
+    if (!coupon.trim()) return;
+    if (coupon.trim().toUpperCase() === 'BOLDER20') {
+      setCouponState('success');
+    } else {
+      setCouponState('error');
+    }
+  };
   return (
     <>
       {/* ── Header ───────────────────────────────────── */}
@@ -15,6 +28,45 @@ export default function Pricing() {
           No hidden fees. Choose the tier that matches your workflow and unlock quiet power in customization.
         </p>
       </header>
+
+      {/* ── Coupon Bar ───────────────────────────────── */}
+      <div className="max-w-md mx-auto mb-12">
+        <p className="text-xs text-white/40 text-center mb-3 uppercase tracking-widest font-medium">Have a coupon code?</p>
+        <div className="flex gap-2">
+          <div className="relative flex-grow">
+            <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-white/30 text-[18px] pointer-events-none">local_offer</span>
+            <input
+              className={`w-full bg-white/5 border rounded-xl py-3 pl-10 pr-4 text-sm text-white outline-none transition-all placeholder:text-white/25 ${
+                couponState === 'success' ? 'border-green-500/60 bg-green-500/5' :
+                couponState === 'error'   ? 'border-red-500/60 bg-red-500/5' :
+                'border-white/10 focus:border-primary-container/60'
+              }`}
+              placeholder="Enter code e.g. BOLDER20"
+              value={coupon}
+              onChange={e => { setCoupon(e.target.value); setCouponState('idle'); }}
+              onKeyDown={e => e.key === 'Enter' && applyCoupon()}
+            />
+          </div>
+          <button
+            onClick={applyCoupon}
+            className="bg-primary-container text-white px-5 py-3 rounded-xl text-sm font-medium hover:opacity-90 transition-opacity shrink-0"
+          >
+            Apply
+          </button>
+        </div>
+        {couponState === 'success' && (
+          <p className="text-green-400 text-xs mt-2 flex items-center gap-1.5">
+            <span className="material-symbols-outlined text-[14px]">check_circle</span>
+            20% discount applied!
+          </p>
+        )}
+        {couponState === 'error' && (
+          <p className="text-red-400 text-xs mt-2 flex items-center gap-1.5">
+            <span className="material-symbols-outlined text-[14px]">cancel</span>
+            Invalid coupon code. Try again.
+          </p>
+        )}
+      </div>
 
       {/* ── Pricing Cards ────────────────────────────── */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-6xl mx-auto">
