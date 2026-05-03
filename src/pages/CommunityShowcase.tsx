@@ -77,10 +77,10 @@ export default function CommunityShowcase() {
               />
               {/* hover overlay */}
               <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-sm">
-                <button className="bg-primary-container text-white px-5 py-2 rounded-full text-sm font-medium flex items-center gap-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-lg">
+                <a href="#/editor" className="bg-primary-container text-white px-5 py-2 rounded-full text-sm font-medium flex items-center gap-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-lg">
                   <span className="material-symbols-outlined text-[14px]" data-icon="content_copy">content_copy</span>
                   Remix
-                </button>
+                </a>
               </div>
             </div>
             {/* Card footer */}
