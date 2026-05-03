@@ -1,73 +1,101 @@
-# React + TypeScript + Vite
+# ⚡ Bolder: Design Without Boundaries
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Bolder App](./public/assets/icons/anime_pink_kawaii.png)
 
-Currently, two official plugins are available:
+**Bolder** is a premium, high-fidelity web application designed for modern digital creators to craft, tweak, and export custom icons and folders. Built with a stunning dark-mode cinematic aesthetic, glassmorphism UI, and highly interactive components, Bolder provides an environment where designers can manipulate constraints dynamically.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Interactive Editor Dashboard:** 
+  - Dynamic preset selection rendering live composite textures.
+  - Interactive "Tweak" sliders manipulating CSS filters (`hue-rotate`, `brightness`, `contrast`) in real-time.
+  - Active global glow colors based on custom palettes.
+  - Toggable layer visibility for base structures and textures.
+- **Glassmorphic UI Design System:** Deeply integrated translucent panels, floating elements, blurred neon backdrops, and modern micro-animations using Tailwind CSS.
+- **Dynamic Pricing Engine:** Clean lifetime pricing tiers featuring an active coupon validation system (Try code: `BOLDER20`).
+- **Responsive Navigation:** Clean HashRouter-based routing between Landing, Editor, Templates, Pricing, and more.
+- **Zero-Dependency Animations:** Pure CSS and Tailwind transitions for an ultra-smooth, lightweight feel.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Framework:** [React 18](https://react.dev/)
+- **Build Tool:** [Vite](https://vitejs.dev/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Routing:** [React Router DOM](https://reactrouter.com/) (HashRouter for seamless static deployment)
+- **Icons:** Google Material Symbols
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🏎️ Getting Started
+
+To run the Bolder application locally on your machine:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/proindra/Bolder.git
+   cd Bolder
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open in browser:**
+   Navigate to `http://localhost:5173/Bolder/` (or whichever port Vite assigns).
+
+---
+
+## 📁 Project Structure
+
+```text
+src/
+├── assets/         # Static images, folder icons, and textures
+├── components/     # Reusable UI components
+│   ├── TopNavBar.tsx   # Global persistent top navigation
+│   └── Footer.tsx      # Global persistent footer
+├── pages/          # Application views
+│   ├── LandingPage.tsx # Hero, Demo video, CTAs
+│   ├── Editor.tsx      # Core interactive design suite
+│   ├── Pricing.tsx     # Pricing tiers & coupon logic
+│   ├── Templates.tsx   # Community presets gallery
+│   └── ...
+├── App.tsx         # Main router setup
+├── index.css       # Core Tailwind config & custom utilities
+└── main.tsx        # React mounting point
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🌐 Deployment
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+This project uses a standard Vite build pipeline and is configured to be deployed easily to static hosts like **GitHub Pages**. 
+Because it utilizes `HashRouter`, routing works perfectly on static file servers without configuring custom redirect rules.
+
+```bash
+npm run build
 ```
+The output will be generated in the `/dist` directory.
+
+---
+
+## 🎨 Design System (`index.css`)
+
+Bolder utilizes custom Tailwind utilities specifically built for its visual language:
+- `.glass-card`, `.glass-panel`: Translucent surfaces with backdrops.
+- `.neon-glow`: Intense orange hover shadows for CTAs.
+- `.glow-active`: Active selection states with inner and outer light reflections.
+- `bg-primary-container`: The core brand color `#ff6b00` mapped globally.
+
+---
+*Built with ❤️ for creators.*
