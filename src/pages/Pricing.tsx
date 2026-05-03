@@ -96,9 +96,9 @@ export default function Pricing() {
               <span className="text-sm text-white/60">Custom icon overlays</span>
             </li>
           </ul>
-          <button className="w-full py-3 rounded-xl border border-white/10 hover:bg-white/5 text-sm text-white tracking-wider uppercase transition-colors backdrop-blur-md font-medium">
+          <a href="#/editor" className="w-full py-3 rounded-xl border border-white/10 hover:bg-white/5 text-sm text-white tracking-wider uppercase transition-colors backdrop-blur-md font-medium text-center block">
             Get Started
-          </button>
+          </a>
         </div>
 
         {/* Pro – featured */}
@@ -126,9 +126,9 @@ export default function Pricing() {
               </li>
             ))}
           </ul>
-          <button className="w-full py-3 rounded-xl bg-gradient-to-b from-primary-container to-[#cc5500] hover:to-primary-container text-sm text-white tracking-wider uppercase transition-all shadow-[inset_0_1px_0_rgba(255,255,255,0.3)] relative z-10 font-medium">
+          <a href="#/editor" className="w-full py-3 rounded-xl bg-gradient-to-b from-primary-container to-[#cc5500] hover:to-primary-container text-sm text-white tracking-wider uppercase transition-all shadow-[inset_0_1px_0_rgba(255,255,255,0.3)] relative z-10 font-medium text-center block">
             Upgrade to Pro
-          </button>
+          </a>
         </div>
       </div>
 
